@@ -1,20 +1,33 @@
 import { BsWhatsapp, BsGithub } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 import { SiGmail } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section
+    <motion.section
       id="contact"
       className="bg-white py-16 text-center"
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
     >
-      <h1 className="text-4xl font-bold text-gray-800 mb-10">
+      <motion.h1
+        className="text-4xl font-bold text-gray-800 mb-10"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         Contact Me
-      </h1>
-
+      </motion.h1>
       <div className="flex justify-center gap-6 flex-wrap">
         {/* GitHub */}
-        <div className="transform transition-transform duration-300 hover:scale-130">
+        <motion.div
+          className="transform transition-transform duration-300 hover:scale-130"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <a
             target="_blank"
             href="https://github.com/1234-mahmoud"
@@ -23,10 +36,14 @@ export default function Contact() {
           >
             <BsGithub />
           </a>
-        </div>
-
+        </motion.div>
         {/* LinkedIn */}
-        <div className="transform transition-transform duration-300 hover:scale-130">
+        <motion.div
+          className="transform transition-transform duration-300 hover:scale-130"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <a
             target="_blank"
             href="https://www.linkedin.com/in/mahmoud-elbalhi/"
@@ -35,10 +52,14 @@ export default function Contact() {
           >
             <GrLinkedinOption />
           </a>
-        </div>
-
+        </motion.div>
         {/* WhatsApp */}
-        <div className="transform transition-transform duration-300 hover:scale-130">
+        <motion.div
+          className="transform transition-transform duration-300 hover:scale-130"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <a
             target="_blank"
             href="https://wa.me/+201064218085"
@@ -47,10 +68,14 @@ export default function Contact() {
           >
             <BsWhatsapp />
           </a>
-        </div>
-
+        </motion.div>
         {/* Gmail */}
-        <div className="transform transition-transform duration-300 hover:scale-130">
+        <motion.div
+          className="transform transition-transform duration-300 hover:scale-130"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <a
             target="_blank"
             href="mailto:mahmoud01234elbalhi@gmail.com?subject=Hello&body=I%20wanted%20to%20get%20in%20touch%20with%20you."
@@ -59,8 +84,8 @@ export default function Contact() {
           >
             <SiGmail />
           </a>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

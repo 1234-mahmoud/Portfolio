@@ -29,6 +29,7 @@ export default function HomeComp() {
         <div
           className={`info absolute w-full h-full 
           flex flex-col justify-center items-center gap-[10px] text-white/85
+          max-md:pt-[50px]
         `}
         >
           {/* Animated heading */}

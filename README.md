@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Works Portfolio
+
+This is a personal portfolio and project showcase built with [Next.js](https://nextjs.org), designed and developed by Mahmoud Elbalhi. The site highlights selected works, modern UI development, and seamless user experiences, as well as skills and contact information.
+
+## Features
+- **Portfolio Showcase:** Browse a curated selection of web projects, including landing pages, online stores, and more.
+- **Modern UI/UX:** Built with React.js, Tailwind CSS, and Framer Motion for smooth animations and responsive design.
+- **Skills Section:** Overview of front-end technologies and tools used.
+- **Contact Section:** Easy access to connect via GitHub, LinkedIn, WhatsApp, and email.
+- **SEO Optimized:** All pages include SEO metadata for better discoverability.
 
 ## Getting Started
 
@@ -18,19 +27,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+- `app/` - Main application pages and layout
+- `components/` - Reusable React components (Header, Home, Projects, Skills, Contact)
+- `data/` - Project data for the portfolio
+- `public/` - Static assets and images
 
-## Learn More
+## Author
+**Mahmoud Elbalhi**  
+Front-End Developer  
+[LinkedIn](https://www.linkedin.com/in/mahmoud-elbalhi/) | [GitHub](https://github.com/1234-mahmoud)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is open source and available under the [MIT License](LICENSE).

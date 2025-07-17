@@ -1,16 +1,33 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <section className="skills_section py-16 bg-gray-100">
+    <motion.section
+      className="skills_section py-16 bg-gray-100"
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          My <span className="text-indigo-600">Skills</span>
-        </h1>
-
+        <motion.h1
+          className="text-4xl font-bold text-center text-gray-800 mb-12"
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          MySkills
+        </motion.h1>
         <div className="my_skills grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
           {/* React */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             <Image
               src="/react.svg"
               alt="React"
@@ -18,59 +35,79 @@ export default function Skills() {
               objectFit="contain"
               priority
             />
-          </div>
-
+          </motion.div>
           {/* HTML */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <Image
               src="/html.svg"
               alt="HTML"
               layout="fill"
               objectFit="contain"
             />
-          </div>
-
+          </motion.div>
           {/* CSS */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <Image
               src="/css3.svg"
               alt="CSS"
               layout="fill"
               objectFit="contain"
             />
-          </div>
-
+          </motion.div>
           {/* JavaScript */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <Image
               src="/js.svg"
               alt="JavaScript"
               layout="fill"
               objectFit="contain"
             />
-          </div>
-
+          </motion.div>
           {/* Bootstrap */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             <Image
               src="/bootstrap.svg"
               alt="Bootstrap"
               layout="fill"
               objectFit="contain"
             />
-          </div>
-
+          </motion.div>
           {/* Tailwind CSS */}
-          <div className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110">
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
             <Image
               src="/tailwind.svg"
               alt="Tailwind CSS"
               layout="fill"
               objectFit="contain"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

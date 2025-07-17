@@ -1,19 +1,34 @@
+'use client';
+
 import data from "../data/data";
 import Contact from "./Contact";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <div className="projects py-16 bg-gray-50" id="projects">
-      <div className="proj_cont container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+    <motion.div
+      className="projects py-16 bg-gray-50" id="projects"
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div className="proj_cont container mx-auto px-4">
+        <motion.h1
+          className="text-4xl font-bold text-center text-gray-800 mb-12"
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           My Projects
-        </h1>
-
+        </motion.h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((project, idx) => (
-            <div
+            <motion.div
               key={idx}
               className="card bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-500 group overflow-hidden"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
             >
               <div className="card_pic h-48 w-full overflow-hidden">
                 <img
@@ -23,13 +38,11 @@ export default function Projects() {
                   loading="lazy"
                 />
               </div>
-
               <div className="card_data p-5">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
-
                 <div className="proj_links flex gap-4 mb-3">
                   <a
                     href={project.sourseCode}
@@ -48,19 +61,17 @@ export default function Projects() {
                     Live Demo
                   </a>
                 </div>
-
                 <span className="block text-center text-xs text-gray-400">
                   Touch the card
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
-
-      <div className="mt-20">
+      </motion.div>
+      <motion.div className="mt-20">
         <Contact />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
