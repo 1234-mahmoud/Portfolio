@@ -106,6 +106,21 @@ export default function Skills() {
               objectFit="contain"
             />
           </motion.div>
+
+           {/* Next js */}
+          <motion.div
+            className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Image
+              src="/next.svg"
+              alt="JavaScript"
+              layout="fill"
+              objectFit="contain"
+            />
+          </motion.div>
         </div>
       </div>
     </motion.section>
