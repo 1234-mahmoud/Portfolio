@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import data from "../data/data";
 import Contact from "./Contact";
@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <motion.div
-      className="projects py-16 bg-gray-50" id="projects"
+      className="projects py-16 bg-gray-50"
+      id="projects"
       initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -21,6 +22,17 @@ export default function Projects() {
         >
           My Projects
         </motion.h1>
+        <span
+          className={`flex justify-center items-center gap-[10px] my-[15px] text-gray-700 font-bold text-xl `}
+        >
+          projects number:{" "}
+          <span
+            className={`flex justify-center items-center text-white 
+              w-[40px] h-[40px] rounded-full bg-gray-700`}
+          >
+            {data.length}
+          </span>
+        </span>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((project, idx) => (
             <motion.div
@@ -39,7 +51,9 @@ export default function Projects() {
                 />
               </div>
               <div className="card_data p-5">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {project.title}
+                </h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
