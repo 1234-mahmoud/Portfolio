@@ -20,7 +20,7 @@ export default function Skills() {
         >
           MySkills
         </motion.h1>
-        <div className="my_skills grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+        <div className="my_skills grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-8 justify-items-center">
           {/* React */}
           <motion.div
             className="img_box group w-20 h-20 md:w-24 md:h-24 relative transition-transform duration-300 hover:scale-110"
