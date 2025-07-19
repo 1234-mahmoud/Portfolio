@@ -56,6 +56,10 @@ export default function Header() {
           </a>
         </div>
       </div>
+
+      {
+        showNav && (<div className="fixed inset-0 z-40 bg-black/50 backdrop-blur-xs" onClick={()=>setShowNav(false)}></div>)
+      }
     </header>
   );
 }
