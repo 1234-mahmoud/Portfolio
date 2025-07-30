@@ -1,6 +1,36 @@
 
 const data = [
   {
+   img: '/venvl.jpeg',
+   title: `Venvl`,
+   description:
+     `VENVL is a rental platform for discovering premium daily and monthly properties..
+`,
+   sourseCode: `https://github.com/1234-mahmoud/Venvl`,
+   liveDemo: `https://venvl.vercel.app/`,
+ },
+    {
+   img: '/arx.jpeg',
+   title: `ARX`,
+   description:
+     `ARX Design is a real estate platform showcasing ARX Developments’ projects and services.
+`,
+   sourseCode: `https://github.com/1234-mahmoud/arx-design`,
+   liveDemo: `https://1234-mahmoud.github.io/arx-design/`,
+ },
+ {
+   
+   img: '/takeaway.webp',
+   title: `Takeaway`,
+   description:
+     `Takeaway Design is an online fast food that fills you up and comes to you.
+`,
+   sourseCode: `https://github.com/1234-mahmoud/takeaway`,
+   liveDemo: `https://takeaway-lemon.vercel.app/`,
+
+ }
+ ,
+  {
     img: '/aprtio.jpg',
     title: `Modern Homes`,
     description:
@@ -39,24 +69,6 @@ const data = [
       `this a simple landing page of online store of food that contains different food colors and drinks`,
     sourseCode: `https://github.com/1234-mahmoud/Food-Store`,
     liveDemo: `https://1234-mahmoud.github.io/Food-Store/`,
-  },
-   {
-    img: '/venvl.jpeg',
-    title: `Venvl`,
-    description:
-      `VENVL is a rental platform for discovering premium daily and monthly properties..
-`,
-    sourseCode: `https://github.com/1234-mahmoud/Venvl`,
-    liveDemo: `https://venvl.vercel.app/`,
-  },
-     {
-    img: '/arx.jpeg',
-    title: `ARX`,
-    description:
-      `ARX Design is a real estate platform showcasing ARX Developments’ projects and services.
-`,
-    sourseCode: `https://github.com/1234-mahmoud/arx-design`,
-    liveDemo: `https://1234-mahmoud.github.io/arx-design/`,
   },
 ];
 
