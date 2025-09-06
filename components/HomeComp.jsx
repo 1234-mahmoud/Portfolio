@@ -104,7 +104,7 @@ export default function HomeComp() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
-          href="https://drive.google.com/file/d/1Idyjat6KmmHK6Gz6KbtK_f7bAhbEOWYt/view?usp=sharing"
+          href="https://drive.google.com/file/d/1yuP63MkugH60jnJQtZlIQX4J8LwBAHtW/view?usp=sharing"
           target="_blank"
           className={`inline-block bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white px-6 py-3 
             rounded-full shadow-lg hover:shadow-xl transition duration-300`}
