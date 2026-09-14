@@ -111,7 +111,7 @@ export default function Header() {
                 rel="noreferrer"
                 className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[#111111] px-5 py-3 font-semibold text-white"
               >
-                <Icon name="github" size={18} className="text-white"/> GitHub
+                <Icon name="github" size={18} className="text-white"/> <span className="text-white">GitHub</span>
               </a>
             </nav>
           </div>
