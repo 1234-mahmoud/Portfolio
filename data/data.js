@@ -43,14 +43,14 @@ const data = [
     sourceCode: "https://github.com/1234-mahmoud/APRTIO",
     liveDemo: "https://1234-mahmoud.github.io/APRTIO/",
   },
-  {
-    img: "/landing.jpg",
-    title: "Simple Landing Page",
-    description:
-      "A landing page for a business company showing the stages of the company's development.",
-    sourceCode: "https://github.com/1234-mahmoud/landing_page",
-    liveDemo: "https://1234-mahmoud.github.io/landing_page/",
-  },
+  // {
+  //   img: "/landing.jpg",
+  //   title: "Simple Landing Page",
+  //   description:
+  //     "A landing page for a business company showing the stages of the company's development.",
+  //   sourceCode: "https://github.com/1234-mahmoud/landing_page",
+  //   liveDemo: "https://1234-mahmoud.github.io/landing_page/",
+  // },
   {
     img: "/hyper.jpeg",
     title: "Hyper Market",
@@ -59,22 +59,22 @@ const data = [
     sourceCode: "https://github.com/1234-mahmoud/Hyper_Market",
     liveDemo: "https://1234-mahmoud.github.io/Hyper_Market/",
   },
-  {
-    img: "/kindle.jpg",
-    title: "Online Book Store",
-    description:
-      "An online book store project featuring a wide range of technology books.",
-    sourceCode: "https://github.com/1234-mahmoud/online_bookstore",
-    liveDemo: "https://1234-mahmoud.github.io/online_bookstore/",
-  },
-  {
-    img: "/food.jpeg",
-    title: "Food Store",
-    description:
-      "A landing page for an online food store featuring a variety of dishes and drinks.",
-    sourceCode: "https://github.com/1234-mahmoud/Food-Store",
-    liveDemo: "https://1234-mahmoud.github.io/Food-Store/",
-  },
+  // {
+  //   img: "/kindle.jpg",
+  //   title: "Online Book Store",
+  //   description:
+  //     "An online book store project featuring a wide range of technology books.",
+  //   sourceCode: "https://github.com/1234-mahmoud/online_bookstore",
+  //   liveDemo: "https://1234-mahmoud.github.io/online_bookstore/",
+  // },
+  // {
+  //   img: "/food.jpeg",
+  //   title: "Food Store",
+  //   description:
+  //     "A landing page for an online food store featuring a variety of dishes and drinks.",
+  //   sourceCode: "https://github.com/1234-mahmoud/Food-Store",
+  //   liveDemo: "https://1234-mahmoud.github.io/Food-Store/",
+  // },
 ];
 
 export default data;
