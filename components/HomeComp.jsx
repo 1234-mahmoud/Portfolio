@@ -36,13 +36,13 @@ export default function HomeComp() {
                 <span className="text-white text-center block">Explore my work</span>
                 <Icon name="arrow" size={18} className="text-white"/>
               </a>
-              <a
+              {/* <a
                 href="/Mahmoud-Elbalhi-Resume.pdf"
                 download
                 className="focus-ring inline-flex items-center gap-3 rounded-full border border-black/20 px-6 py-3 font-semibold text-black transition hover:border-black/50"
               >
                 Download CV <Icon name="download" size={16} />
-              </a>
+              </a> */}
             </div>
           </div>
 
